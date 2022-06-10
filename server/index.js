@@ -1,9 +1,6 @@
 const express = require("express");
-const writeData = require("./getData.js");
 
 const app = express();
-
-writeData();
 
 app.use(express.static("./dist"));
 
